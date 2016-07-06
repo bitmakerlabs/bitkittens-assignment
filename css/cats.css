@@ -1,0 +1,12 @@
+.cat-box img {
+  width: 100px;
+}
+
+.summon-cats {
+  position: absolute;
+  right: 3px;
+  bottom: 3px;
+  background: white;
+  border-image: none;
+  border: none;
+}

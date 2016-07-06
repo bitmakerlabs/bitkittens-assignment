@@ -1,0 +1,36 @@
+html, body {
+  height: 100%;
+}
+
+h1 {
+  margin: 0;
+}
+main {
+  background: url('../images/yard.png');
+  width: 1024px;
+  margin: 0 auto;
+  height: 100%;
+  position: relative;
+}
+
+.cat-box {
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  position: absolute;
+}
+
+#cat1 {
+  top: 360px;
+  left: 110px;
+}
+
+#cat2 {
+  top: 240px;
+  right: 150px;
+}
+
+#cat3 {
+  top: 440px;
+  right: 210px;
+}
