@@ -4,9 +4,12 @@
 
 .summon-cats {
   position: absolute;
-  right: 3px;
-  bottom: 3px;
-  background: white;
+  left: 3px;
+  top: 3px;
+  background: #f0cc88;
   border-image: none;
-  border: none;
+  border: 1px solid #843720;
+  color: #843720;
+  padding: 0.5rem 1rem;
+  border-radius: 3px;
 }
