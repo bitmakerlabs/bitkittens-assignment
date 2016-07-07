@@ -26,7 +26,7 @@ Test out the button in the browser and use the network tab of the developer tool
 {"cats": [{"id":44,"name":"Lanta","photo":"https://s3.amazonaws.com/bitmakerhq/resources/web-development/bitkittens/lanta.jpg","fun_fact":"Likes to pretend she is a cat","created_at":"2016-06-30T20:11:32.647Z","updated_at":"2016-06-30T20:11:32.647Z"},{"id":41,"name":"Timone","photo":"https://s3.amazonaws.com/bitmakerhq/resources/web-development/bitkittens/timone.jpg","fun_fact":"He likes to dress fancy","created_at":"2016-06-30T20:11:32.559Z","updated_at":"2016-06-30T20:11:32.559Z"},{"id":47,"name":"Sahara","photo":"https://s3.amazonaws.com/bitmakerhq/resources/web-development/bitkittens/sahara.jpg","fun_fact":"likes laser pointers and is a nap enthusiast","created_at":"2016-06-30T20:11:32.775Z","updated_at":"2016-06-30T20:11:32.775Z"}]}
 ```
 
-The response data you get back from the server is a JSON object containing an array of cat objects.  You can access values in a JSON object similarly to how you would access values from a Ruby hash.  For example, given the following JSON object:
+The response data you get back from the server is a blob of JSON containing an array of cat objects.  JQuery will convert this blob into an object on your behalf, and then you can access values similarly to how you would access values from a Ruby hash.  For example, given the following JSON data:
 
 ```json
 var dogJSON = {"puppies": [{"name": "Charlie", "owner": "Ella"}, {"name": "Abbey", "owner": "Dima"} ]};
@@ -38,7 +38,7 @@ the following code would return the array of dog objects:
 var dogList = dogJSON["puppies"];
 ```
 
-Each element in that array is its own JSON object, so the code to get the name of the first dog would look like:
+Each element in that array is its own object, so the code to get the name of the first dog would look like:
 
 ```js
 dogList[0]["name"] // returns "Charlie"
