@@ -14,3 +14,7 @@
   border-radius: 3px;
   font-weight: bold;
 }
+
+.summon-cats:hover {
+  background-color: rgba(240,204,136, 0.6);
+}
