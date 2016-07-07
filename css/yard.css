@@ -5,8 +5,9 @@ html, body {
 h1 {
   margin: 0;
 }
+
 main {
-  background: url('../images/yard.png');
+  background: url('../images/yard.png') no-repeat;
   width: 1024px;
   margin: 0 auto;
   height: 100%;
