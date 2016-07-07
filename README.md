@@ -10,7 +10,7 @@ Our goal is to make the "summon kitties" button work to populate the yard with a
 
 ![screenshot of finished assignment](finish.png)
 
-We have set up a server at `http://bitkittens.herokuapp.com` that responds with random cats selected from a database of cats from the Bitmaker community.  You will be writing AJAX code to request JSON cat objects from the server, using JavaScript to make `<img>` tags out of that data, and adding those images to the empty `.cat-holder` divs that already exist on the page.
+We have set up a server at `http://bitkittens.herokuapp.com` that responds with random cats selected from a database of cats from the Bitmaker community.  You will be writing AJAX code to request JSON cat objects from the server, using JavaScript to make `<img>` tags out of that data, and adding those images to the empty `.cat-box` divs that already exist on the page.
 
 ## Setting up the event handler
 Your first step should be to set up a click event handler for the "summon kitties" button (use the developer tools or look at the HTML source code to determine the best way to select this element with jQuery).
@@ -50,7 +50,7 @@ Chain a `done` callback on to your `$.ajax` function that does the following for
 1. Creates a new `<img>` tag
 2. Sets the `src` attribute of the `<img>` to the cat's photo
 3. Sets the `alt` attribute of the `<img>` to "Photo of (insert cat name here)"
-4. Inserts that `<img>` into one of the empty `.cat-holder` divs
+4. Inserts that `<img>` into one of the empty `.cat-box` divs
 
 Hint: try getting this working for just one cat at first and then expand on your code to make it work for all three cats once you're confident in your solution.
 
@@ -62,7 +62,7 @@ You're done!  Isn't it adorable?
 
 ## Stretch Exercises
 
-1. By default the server responds with three random cats, but you can pass a "number" parameter in your AJAX call in order to control how many cats you receive.  Try asking for more cats and create additional `.cat-holder` divs in your HTML to put them in.
+1. By default the server responds with three random cats, but you can pass a "number" parameter in your AJAX call in order to control how many cats you receive.  Try asking for more cats and create additional `.cat-box` divs in your HTML to put them in.
 
 2. Create a "cat book" that keeps track of which cats have visited your yard.  Add a `<ul>` somewhere on your page and every time the "summon kitties" button is clicked append new `<li>`s containing the names of the new cats.  How can you make sure the list contains no duplicates?  What if you want to also display the number of times each cat has visited?
 
